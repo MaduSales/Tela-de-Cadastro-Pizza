@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+            <img src="img/logo2.png" alt="Logo da Pizzaria" class="logo">
+        <nav>
+            <a href="#">Sair</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Cadastro de Pizza</h1>
+        <form action="#" method="post" class="pizza-form">
+            <div class="form-group">
+                <label for="pizza-name">Nome da Pizza:</label>
+                <input type="text" id="pizza-name" name="pizza-name" required placeholder="Ex: Pizza de Mussarela">
+            </div>
+
+            <div class="form-group">
+                <label for="pizza-price">Valor da Pizza (R$):</label>
+                <input type="number" id="pizza-price" name="pizza-price" required placeholder="Ex: 35,00" step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="pizza-description">Descrição da Pizza:</label>
+                <textarea id="pizza-description" name="pizza-description" rows="4" required placeholder="Ex: Queijo mussarela derretido com molho de tomate especial."></textarea>
+            </div>
+
+            <button type="submit">Cadastrar Pizza</button>
+        </form>
+    </div>
+</body>
+
+</html>
